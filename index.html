@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- GOOGLE FONTS & MATERIAL ICONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- ANIMATE ON SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Zabi Ahmed P</title>
+    <link rel="icon" href="assets/favicon/icon.png">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="z-index: 999;">
+        <div class="container">
+            <a id="navbar-brand" class="navbar-brand" href="#">Zabi Ahmed P</a>
+            <button class="navbar-toggler" type="button" onclick="reveal_mobile_menu()">
+                <!-- data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" -->
+                <svg version="1.1" height="20px" id="mobile_toggle" x="0px" y="0px" viewBox="0 0 25 25"
+                    style="enable-background:new 0 0 25 25;" xml:space="preserve">
+
+                    <style>
+                        .show_icon {
+                            animation: show_icon 300ms linear forwards;
+                        }
+
+                        @keyframes show_icon {
+                            0% {
+                                opacity: 0;
+                            }
+
+                            100% {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+
+                        .hide_icon {
+                            animation: hide_icon 300ms linear forwards;
+                        }
+
+                        @keyframes hide_icon {
+                            0% {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+
+                            100% {
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+                        }
+                    </style>
+
+                    <g id="menu_icon">
+                        <rect x="2.5" y="11.5" width="25" height="2" />
+                        <rect x="2.5" y="4" width="25" height="2" />
+                        <rect x="2.5" y="19" width="15" height="2" />
+                    </g>
+                    <g id="close_icon" style="visibility: hidden;">
+                        <rect x="10.9" y="-3.6" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.1777 12.5)"
+                            width="3.2" height="32.1" />
+                        <rect x="-3.6" y="10.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.1777 12.5)"
+                            width="32.1" height="3.2" />
+                    </g>
+                </svg>
+            </button>
+
+            <div id="mobile_menu" class="hidden" style="position: fixed; width: 100vw; height: 100vh; background-color: #000; top: 0; left: 0; z-index: -1;
+                display: grid;
+                align-items: center;
+                ">
+                <ul id="mobile_nav_links" style="text-align: center; list-style-type: none; padding-inline-start: 0px;">
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                <ul id="mobile_social_links" style="position: fixed; height: 50px; width: 100%; bottom: 30px; display: grid; grid-auto-flow: column; 
+                list-style-type: none; justify-content: center; padding-inline-start: 0px; column-gap: 50px;">
+                    <li><i class="fab fa-github"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggle_icon()">
+                            <i id="mode_icon" class="far fa-moon"></i>
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link last" href="#contact" style="color: #7B1FA2;">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="row" style="padding-top: 200px; padding-bottom: 200px;">
+                <div class="col-md-12">
+                    <h1 class="ml11">
+                        <span class="text-wrapper">
+                            <span class="line line1" style="background-color: rgba(0,0,0,0.8);"></span>
+                            <span id="text" style="font-size: 1.75rem; font-weight: 400; color: rgba(0,0,0,0.8);"
+                                class="letters">Hi, It's Zabi</span>
+                        </span>
+                    </h1>
+                    <p id="text1"
+                        style="font-family: 'Playfair Display'; font-size: 80px; font-weight: 700; line-height: 1.1; color: black;">
+                        I am a full stack web <br>developer & more</p>
+                    <h3 id="text2" style="line-height: 1.5;">I am extremely passionate about web development and love
+                        <br> sharing
+                        my work with the world.</h3>
+                    <!-- <button class="see_work_btn"><span class="text">see work</span> <span class="material-icons">
+                            chevron_right
+                        </span></button> -->
+                    <a class="see_work_btn" href="#projects"><span class="text">see work</span> <span
+                            class="material-icons">
+                            chevron_right</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="row" style="font-family: 'Alata', sans-serif;">
+                <div class="col-md-12">
+                    <p style="font-size: 55px; font-weight: 900; margin-bottom: 0px;">Skills.</p>
+                    <p style="font-size: 25px; letter-spacing: 1.5px; font-weight: 600; color:rgba(0,0,0,0.5);">
+                        Capabilities</p>
+                </div>
+            </div>
+            <div class="row skills_card_wrap">
+                <div class="col-md-4 align-self-end" data-aos="fade-up" data-aos-delay="50" data-aos-once="true"
+                    data-aos-duration="1000">
+                    <div class="card_container">
+                        <div class="card_inner">
+                            <div class="card_top">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="card_body">
+                                <h4>Front End</h4>
+                                <p>I have in-depth knowledge of front end development languages such as HTML, Sass, CSS,
+                                    & JS. I use VS Code exclusively. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 align-self-center" data-aos="fade-up" data-aos-delay="50" data-aos-once="true"
+                    data-aos-duration="1000">
+                    <div class="card_container">
+                        <div class="card_inner">
+                            <div class="card_top">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="card_body">
+                                <h4>Javascript</h4>
+                                <p>I love working with node.js, react.js and gatsby.js to create full stack applications
+                                    with the
+                                    help of the MERN stack. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 align-self-start" data-aos="fade-up" data-aos-delay="50" data-aos-once="true"
+                    data-aos-duration="1000">
+                    <div class="card_container">
+                        <div class="card_inner">
+                            <div class="card_top">
+                                <i class="fab fa-wordpress-simple"></i>
+                            </div>
+                            <div class="card_body">
+                                <h4>Wordpress</h4>
+                                <p>I have worked on a few sites using the wordpress platform. It allows me to create
+                                    clean and simple yet robust websites.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row skills_card_wrap_2">
+                <div class="col-md-4 skills_card-1 align-self-end" data-aos="fade-up" data-aos-delay="50"
+                    data-aos-once="true" data-aos-duration="1000">
+                    <div class="card_container">
+                        <div class="card_inner">
+                            <div class="card_top">
+                                <i class="fas fa-mobile"></i>
+                            </div>
+                            <div class="card_body">
+                                <h4>Mobile First</h4>
+                                <p>I build responsive sites for my clients with the mobile first approach that work
+                                    great on any mobile screen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 skills_card-2 align-self-center" data-aos="fade-up" data-aos-delay="50"
+                    data-aos-once="true" data-aos-duration="1000">
+                    <div class="card_container">
+                        <div class="card_inner">
+                            <div class="card_top">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="card_body">
+                                <h4>Python</h4>
+                                <p>Django has been one of the best frameworks to work with. I have created full stack
+                                    web apps using the Django web framework.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 align-self-start" data-aos="fade-up" data-aos-delay="50" data-aos-once="true"
+                    data-aos-duration="1000">
+                    <div class="card_container">
+                        <div class="card_inner">
+                            <div class="card_top">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="card_body">
+                                <h4>Back End</h4>
+                                <p>I have worked with sql, mongodb, graphql & express.js to create robust backends that
+                                    meet all the requirements of the client.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="row" style="font-family: 'Alata', sans-serif;">
+                <div class="col-md-12">
+                    <p style="font-size: 55px; font-weight: 900; margin-bottom: 0px;">Projects.</p>
+                    <p style="font-size: 25px; letter-spacing: 1.5px; font-weight: 600; color:rgba(0,0,0,0.5);">
+                        Showcase</p>
+                </div>
+            </div>
+        </div>
+        <div class="container projects_wrap">
+            <div class="row project_card">
+                <div class="col-md-6 image" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <img src="assets/projects/jvc.png" alt="http://JVCommunication.in">
+                </div>
+                <div class="col-md-6 content" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <p class="heading">JV Communication</p>
+                    <p class="info">A responsive mobile-first full-stack website that showcases the clients intent
+                        and function. </p>
+                    <p class="subheading">Technologies Used</p>
+                    <p class="used">HTML, CSS, PHP, JavaScript, MySql</p>
+                    <a href="https://jvcommunication.in" target="_blank" class="project-btn"><span>visit site</span></a>
+                </div>
+            </div>
+            <div class="row project_card">
+                <div class="col-md-6 content" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <p class="heading">zabiap.tech</p>
+                    <p class="info">Built to showcase my ability as a web developer. The site is open-source
+                        and availiable on github. </p>
+                    <p class="subheading">Technologies Used</p>
+                    <p class="used">HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/zabiap?tab=repositories" target="_blank" class="project-btn"><span>visit
+                            git</span></a>
+                </div>
+                <div class="col-md-6 image" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <img src="assets/projects/zabiap.png" alt="http://zabiap.site">
+                </div>
+            </div>
+            <div class="row project_card">
+                <div class="col-md-6 image" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <img src="assets/projects/result.png" alt="">
+                </div>
+                <div class="col-md-6 content" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <p class="heading">Student result hosting</p>
+                    <p class="info">A complete solution for hosting students' result online. Easy to use and built with
+                        bootstrap, this site is fast and responsive.</p>
+                    <p class="subheading">Technologies Used</p>
+                    <p class="used">HTML, CSS, PHP, JavaScript, MySql</p>
+                    <a href="https://github.com/zabiap/Student-Result-Hosting" target="_blank"
+                        class="project-btn"><span>visit git</span></a>
+                </div>
+            </div>
+            <div class="row project_card last">
+                <div class="col-md-6 content" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <p class="heading">ZAPTO</p>
+                    <p class="info">A simple note taking app built using the MERN stack. Initially developed as a
+                        submission for the HackJaipur hackathon.</p>
+                    <p class="subheading">Technologies Used</p>
+                    <p class="used">Node.js, React.js, Express.js, MongoDb, Bootstrap</p>
+                    <a href="https://github.com/zabiap/ZAPTO" target="_blank" class="project-btn"><span>visit
+                            git</span></a>
+                </div>
+                <div class="col-md-6 image" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <img src="assets/projects/zapto.png" alt="http://zabiap.site">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row" style="font-family: 'Alata', sans-serif;">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <p style="font-size: 55px; font-weight: 900; margin-bottom: 0px;">About me.</p>
+                    <p style="font-size: 25px; letter-spacing: 1.5px; font-weight: 600; color:rgba(0,0,0, 0.5);">
+                        Zabi Ahmed P</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <p class="about_text">I am a Full Stack Developer & Designer with a passion for creating beautiful
+                        user interfaces. I have 7 years of experience in web development & design, gaining many skills
+                        along the way. I am a highly independent and self-motivated idividual.<br><br>I am highly
+                        proficient
+                        with the core front end technologies (HTML, CSS, JavaScript), as well as the backend with PHP
+                        and NodeJS. I find myself working a lot with ReactJS, HTML, Bootstrap and PHP these days.
+                        <br><br>Outside of work I spend my time learning new technologies, hanging with my family,
+                        reading, and
+                        watching anime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="font-family: 'Alata', sans-serif;">
+                    <p style="font-size: 22px; color: rgba(255,255,255,0.6);">Get in
+                        touch</p>
+                    <p data-aos="fade-up" class="email" data-aos-duration="1000" data-aos-once="true"><a
+                            href="mailto:zabiap@gmail.com"
+                            style="font-size: 50px; font-weight: 600; color: #7B1FA2;">zabiap@gmail.com</a></p>
+                </div>
+                <div class="col-md-6 contact_icons" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <a href="https://github.com/zabiap" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://codepen.io/zabiap" target="_blank"><i class="fab fa-codepen"></i></a>
+                    <a href="https://facebook.com/zabizap" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <!-- ICON_SWITCH -->
+    <script>
+        function toggle_icon() {
+            document.getElementById("mode_icon").classList.toggle("fa-sun")
+        }
+        function reveal_mobile_menu() {
+            var mobile_menu = document.getElementById("mobile_menu");
+            if (mobile_menu.classList.contains("shown")) {
+                mobile_menu.classList.add("menu_hide", "hidden");
+                mobile_menu.classList.remove("menu_show", "shown");
+                document.getElementById("navbar-brand").classList.remove("navbar-brand-light");
+                document.getElementById("mobile_toggle").style.fill = "#000";
+
+                document.getElementById("menu_icon").classList.add("show_icon");
+                document.getElementById("menu_icon").classList.remove("hide_icon");
+                document.getElementById("close_icon").classList.add("hide_icon");
+                document.getElementById("close_icon").classList.remove("show_icon");
+
+                var listItems = document.getElementById("mobile_nav_links").getElementsByTagName("li");
+                for (var i = 0; i < listItems.length; i++) {
+                    listItems[i].classList.remove("menu_links_show");
+                }
+
+                document.getElementById("mobile_social_links").classList.remove("social_links_show");
+            }
+            else {
+                mobile_menu.classList.add("menu_show", "shown");
+                mobile_menu.classList.remove("menu_hide", "hidden");
+                document.getElementById("navbar-brand").classList.add("navbar-brand-light");
+                document.getElementById("mobile_toggle").style.fill = "#FFF";
+
+                document.getElementById("menu_icon").classList.add("hide_icon");
+                document.getElementById("menu_icon").classList.remove("show_icon");
+                document.getElementById("close_icon").classList.add("show_icon");
+                document.getElementById("close_icon").classList.remove("hide_icon");
+
+                var listItems = document.getElementById("mobile_nav_links").getElementsByTagName("li");
+                for (var i = 0; i < listItems.length; i++) {
+                    listItems[i].classList.add("menu_links_show");
+                }
+
+                document.getElementById("mobile_social_links").classList.add("social_links_show");
+            }
+        }
+    </script>
+
+    <!-- TEXT EFFECTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml11 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>")
+
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml11 .line',
+                scaleY: [0, 1],
+                opacity: [0.5, 1],
+                easing: "easeOutExpo",
+                duration: 700
+            })
+            .add({
+                targets: '.ml11 .line',
+                translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+                easing: "easeOutExpo",
+                duration: 700,
+                delay: 100
+            }).add({
+                targets: '.ml11 .letter',
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=775',
+                delay: (el, i) => 34 * (i + 1)
+            }).add({
+                targets: '.ml11 .line',
+                opacity: 0,
+                duration: 700,
+                easing: "easeOutExpo",
+                delay: 100
+            });
+    </script>
+
+    <!-- ANIMATE ON SCROLL -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: 'mobile'
+        });
+    </script>
+</body>
+
+</html>
